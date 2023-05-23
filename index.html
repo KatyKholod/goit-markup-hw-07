@@ -46,6 +46,11 @@
             >
           </ul>
         </address>
+        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg width="32" height="22">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -53,7 +58,7 @@
       <!-- Hero section -->
       <section class="hero">
         <div class="hero-container container">
-          <h1 class="main-title">Effective Solutions for Your Business </h1>
+          <h1 class="main-title">Effective Solutions For Your Business </h1>
           <button type="button" class="btn" data-modal-open>Order Service</button>
         </div>
       </section>
@@ -68,7 +73,7 @@
                   <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
               </div>
-              <h3 class="subtitle">Strategy</h3>
+              <h3 class="advantages-subtitle">Strategy</h3>
               <p class="desc">
                 Our goal is to identify the business problem to walk away with the perfect and
                 creative solution.
@@ -80,7 +85,7 @@
                   <use href="./images/icons.svg#icon-clock"></use>
                 </svg>
               </div>
-              <h3 class="subtitle">Punctuality</h3>
+              <h3 class="advantages-subtitle">Punctuality</h3>
               <p class="desc">
                 Bring the key message to the brand's audience for the best price within the shortest
                 possible time.
@@ -92,7 +97,7 @@
                   <use href="./images/icons.svg#icon-diagram"></use>
                 </svg>
               </div>
-              <h3 class="subtitle">Diligence</h3>
+              <h3 class="advantages-subtitle">Diligence</h3>
               <p class="desc">
                 Research and confirm brands that present the strongest digital growth opportunities
                 and minimize risk.
@@ -104,7 +109,7 @@
                   <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
               </div>
-              <h3 class="subtitle">Technologies</h3>
+              <h3 class="advantages-subtitle">Technologies</h3>
               <p class="desc">
                 Design practice focused on digital experiences. We bring forth a deep passion for
                 problem-solving.
@@ -119,15 +124,28 @@
           <h2 class="title">What are we doing</h2>
           <ul class="works-list list">
             <li class="works-item">
-              <img class="works-img" src="./images/works/img1.jpg" alt="Computer" width="360" />
-            </li>
-            <li class="works-item">
-              <img class="works-img" src="./images/works/img2.jpg" alt="Phones" width="360" />
+              <img
+                class="works-img"
+                srcset="./images/works/img1_1x.jpg 1x, ./images/works/img1_2x.jpg 2x"
+                src="./images/works/img1_1x.jpg"
+                alt="Computer"
+                width="360"
+              />
             </li>
             <li class="works-item">
               <img
                 class="works-img"
-                src="./images/works/img3.jpg"
+                srcset="./images/works/img2_1x.jpg 1x, ./images/works/img2_2x.jpg 2x"
+                src="./images/works/img2_1x.jpg"
+                alt="Phones"
+                width="360"
+              />
+            </li>
+            <li class="works-item">
+              <img
+                class="works-img"
+                srcset="./images/works/img3_1x.jpg 1x, ./images/works/img3_2x.jpg 2x"
+                src="./images/works/img3_1x.jpg"
                 alt="Laptop and phone"
                 width="360"
               />
@@ -143,7 +161,8 @@
             <li class="team-item">
               <img
                 class="team-img"
-                src="./images/team/img4.jpg"
+                srcset="./images/team/img4_1x.jpg 1x, ./images/team/img4_2x.jpg 2x"
+                src="./images/team/img4_1x.jpg"
                 alt="Mark Guerrero. Product Designer"
                 width="264"
               />
@@ -185,7 +204,8 @@
             <li class="team-item">
               <img
                 class="team-img"
-                src="./images/team/img5.jpg"
+                srcset="./images/team/img5_1x.jpg 1x, ./images/team/img5_2x.jpg 2x"
+                src="./images/team/img5_1x.jpg"
                 alt="Tom Ford. Frontend Developer"
                 width="264"
               />
@@ -227,7 +247,8 @@
             <li class="team-item">
               <img
                 class="team-img"
-                src="./images/team/img6.jpg"
+                srcset="./images/team/img6_1x.jpg 1x, ./images/team/img6_2x.jpg 2x"
+                src="./images/team/img6_1x.jpg"
                 alt="Camila Garcia. Marketing"
                 width="264"
               />
@@ -269,7 +290,8 @@
             <li class="team-item">
               <img
                 class="team-img"
-                src="./images/team/img7.jpg"
+                srcset="./images/team/img7_1x.jpg 1x, ./images/team/img7_2x.jpg 2x"
+                src="./images/team/img7_1x.jpg"
                 alt="Daniel Wilson. UI Designer"
                 width="264"
               />
@@ -477,6 +499,71 @@
       </div>
     </div>
 
+    <!-- Mobile menu  -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-close-btn js-close-menu" data-modal-close>
+        <svg class="modal-close-icon" width="8" height="8">
+          <use href="./images/icons.svg#icon-close-black"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu list">
+        <li><a href="./index.html" class="mobile-menu-link link">Studio</a></li>
+        <li><a href="./portfolio.html" class="mobile-menu-link link">Portfolio</a></li>
+        <li><a href="" class="mobile-menu-link link">Contacts</a></li>
+      </ul>
+      <ul class="mobile-contacs list">
+        <li class="mobile-contacs-item"
+          ><a class="mobile-contact-link-tel link" href="tel:+110001111111"
+            >+11 (000) 111-11-11</a
+          ></li
+        >
+        <li class="mobile-contacs-item"
+          ><a class="mobile-contact-link-mail link" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          ></li
+        >
+      </ul>
+      <ul class="mobile-socials list">
+        <li class="mobile-socials-item">
+          <a class="socials-link link" href="" target="_blank" rel="noopener noreferrer">
+            <svg class="social-icons" width="24" height="24">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mobile-socials-item">
+          <a class="socials-link link" href="" target="_blank" rel="noopener noreferrer">
+            <svg class="social-icons" width="24" height="24">
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mobile-socials-item">
+          <a class="socials-link link" href="" target="_blank" rel="noopener noreferrer">
+            <svg class="social-icons" width="24" height="24">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mobile-socials-item">
+          <a class="socials-link link" href="" target="_blank" rel="noopener noreferrer">
+            <svg class="social-icons" width="24" height="24">
+              <use href="./images/icons.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+
     <script src="./js/modal.js"></script>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
