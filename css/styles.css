@@ -664,7 +664,7 @@ button {
 
 @media only screen and (min-width: 768px) {
     .customers-container {
-        width: 552px;
+        width: 582px;
     }
 }
 
@@ -774,7 +774,6 @@ button {
         align-items: flex-start;
         column-gap: 24px;
         row-gap: 72px;
-        /* text-align: start; */
     }
 }
 
